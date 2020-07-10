@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EjercicioTriangulo_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+			//Ejercicio Segundo caso se conoce Angulo t, a.
+
+			Console.Write("Ingrese angulo t: ");
+			double t = double.Parse(Console.ReadLine());
+			Console.Write("Ingrese angulo a: ");
+			double a = double.Parse(Console.ReadLine());
+			double ra = a * Math.PI / 180;
+			double y = t * ra;
+			Console.WriteLine("Y es igual a: " + y);
+			double z = Math.Sqrt(Math.Pow(t, 2) - Math.Pow(y, 2));
+			Console.WriteLine("Z es igual a: " + z);
+			double Anguloc = 180 - 90 - a;
+			Console.WriteLine("El angulo de a es: " + Anguloc);
+
+
+		}
+	}
+}
