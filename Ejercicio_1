@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace EjercicioTriangulo_1
+{
+    class Program
+    {
+		public static void Main()
+		{
+
+			// Ejercicio Primer caso se conoce y, z.
+			Console.Write("Ingresa y: ");
+			double y = double.Parse(Console.ReadLine());
+			Console.Write("Ingresa z: ");
+			double z = double.Parse(Console.ReadLine());
+			double hipotenusa = Math.Sqrt(Math.Pow(y, 2) + Math.Pow(z, 2));
+			Console.WriteLine("La hipotenusa es: " + hipotenusa);
+			double arcsencc = Math.Asin(z / hipotenusa);
+			double Anguloc = arcsenc * (180.0 / Math.PI);
+			Console.WriteLine("c en radianes: " + arcsenc);
+			Console.WriteLine("Angulo de c: " + Anguloc);
+			double Anguloa = 180 - 90 - Angulo_c;
+			Console.WriteLine("Angulo de a: " + Anguloa);
+
+			
+
+		}
+
+	}
+}
