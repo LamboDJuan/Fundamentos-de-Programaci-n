@@ -10,7 +10,6 @@ namespace Desafio_02
     {
         static void Main()
         {
-            // Entradas para encontrar el valor del triangulo
             Console.Write("Ingrese b en grados: ");
             double bg = double.Parse(Console.ReadLine());
             Console.Write("Ingrese z: ");
@@ -28,7 +27,6 @@ namespace Desafio_02
             double x =(sobre - y) ;
 
 
-            Console.WriteLine("El valor solicitado de b fue: " + bg);
             Console.WriteLine("El valor resultado es: " + x);
 
         }
