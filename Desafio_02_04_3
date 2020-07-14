@@ -10,7 +10,6 @@ namespace Desafio_02_04_3
     {
         static void Main()
         {
-            // Entradas para encontrar el valor del triangulo
             Console.Write("Ingrese w: ");
             double w = double.Parse(Console.ReadLine());
             Console.Write("Ingrese d en grados: ");
@@ -18,16 +17,10 @@ namespace Desafio_02_04_3
             Console.Write("Ingrese x: ");
             double x = double.Parse(Console.ReadLine());
 
-            double br = bg * (Math.PI / 180.0);
-
-            double cr = Math.Atan2(z, y);
-            double er = Math.PI - cr;
-            double dr = Math.PI - er - br;
-           
-            double sobre = z / Math.Tan(dr);
-            double resultado =(sobre - y) ;
-
-            Console.WriteLine("El valor resultado es: " + resultado);
+            double t = (Math.Pow(2, w)) + (Math.Pow(2, x)) - ((2*w*x) - (Math.Cos(dg)));
+            double tf = (Math.Sqrt(t));
+            
+            
 
         }
     }
