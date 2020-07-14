@@ -11,12 +11,12 @@ namespace Desafio_02_04_3
         static void Main()
         {
             // Entradas para encontrar el valor del triangulo
-            Console.Write("Ingrese b en grados: ");
-            double bg = double.Parse(Console.ReadLine());
-            Console.Write("Ingrese z: ");
-            double z = double.Parse(Console.ReadLine());
-            Console.Write("Ingrese y: ");
-            double y = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese w: ");
+            double w = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese d en grados: ");
+            double dg = double.Parse(Console.ReadLine());
+            Console.Write("Ingrese x: ");
+            double x = double.Parse(Console.ReadLine());
 
             double br = bg * (Math.PI / 180.0);
 
@@ -27,8 +27,6 @@ namespace Desafio_02_04_3
             double sobre = z / Math.Tan(dr);
             double resultado =(sobre - y) ;
 
-
-            Console.WriteLine("El valor solicitado de b fue: " + bg);
             Console.WriteLine("El valor resultado es: " + resultado);
 
         }
