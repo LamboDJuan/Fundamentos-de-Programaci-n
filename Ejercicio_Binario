@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Conversion_BinarioDecimal
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write(" !Para convertir tu numero de Binario a Dec debes de ingresar numero por numero de izq a der!     ");
+
+            Console.Write("Ingrese el 1er numero: ");
+            int n4 = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el 2do numero: ");
+            int n3 = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el 3er numero: ");
+            int n2 = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el 4to numero: ");
+            int n1 = int.Parse(Console.ReadLine());
+            Console.Write("Ingrese el 5to numero: ");
+            int n0 = int.Parse(Console.ReadLine());
+            Console.WriteLine("El Numero Que ingreso es: " + n4 + n3 + n2 + n1 + n0);
+
+            double Resultado = n4 * Math.Pow(2, 4) + b3 * Math.Pow(2, 3) + b2 * Math.Pow(2, 2) + b1 * Math.Pow(2, 1) + b0 * Math.Pow(2, 0);
+            Console.WriteLine("El Numero convertido es: " + Resultado);
+        }
+    }
+}
