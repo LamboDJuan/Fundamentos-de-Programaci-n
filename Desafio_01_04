@@ -25,11 +25,11 @@ namespace Desafio_02
             double dr = Math.PI - er - br;
            
             double sobre = z / Math.Tan(dr);
-            double resultado =(sobre - y) ;
+            double x =(sobre - y) ;
 
 
             Console.WriteLine("El valor solicitado de b fue: " + bg);
-            Console.WriteLine("El valor resultado es: " + resultado);
+            Console.WriteLine("El valor resultado es: " + x);
 
         }
     }
