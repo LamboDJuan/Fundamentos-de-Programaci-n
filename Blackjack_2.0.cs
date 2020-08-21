@@ -6,11 +6,11 @@ namespace Blackjack
     {
         static void Main(string[] args)
         {
-            Random aleatorio = new Random();
+           Random aleatorio = new Random();
             int win = 21, carta1 = 0, carta2 = 0, total = 0, cartaP = 0, juga = 0;
             int max = 0, max2 = 0, residuo = 0;
             string jugador = " ", jugador2 = " ";
-            string[] granja = { "L", "M", "N", "K", "W" };
+            string[] granja = { " ", " ", " ", " ", " " };
             int[] puntajes = { 0, 0, 0, 0, 0 };
 
 
@@ -20,7 +20,10 @@ namespace Blackjack
 
             for (int i = 0; i < juga; i++)
             {
-                Console.WriteLine("Turno del jugador " + (i+1));
+                Console.WriteLine("Nombre: ");
+                granja[i] = Console.ReadLine();
+
+                Console.WriteLine(granja[i] + " Es tu turno...");
                 carta1 = aleatorio.Next(1, 10);
                 carta2 = aleatorio.Next(1, 10);
                 total = carta1 + carta2;
@@ -59,13 +62,14 @@ namespace Blackjack
 
                 puntajes[i] = total;
                 
+
                 if (total > max) 
                 {
                     max = total;
                     jugador = granja[i];
 
                 }
-                if (total > max2)
+                if (total > max2 && total != max)
                 {
                     max2 = total;
                     jugador2 = granja[i];
